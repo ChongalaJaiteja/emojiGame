@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    background: #9796f0;
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+    color: white;
+    padding-inline: 0.7em;
+    box-shadow: 0px 1px 10px #9796f0;
+}
+.logo-container {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 0.34em;
+}
+.nav-logo {
+    width: clamp(0.4rem, 1vw + 1.7rem, 2.5rem);
+}
+.logo-heading {
+    font-size: clamp(0.4rem, 1vw + 0.9rem, 1.6rem);
+}
+.score-container {
+    font-size: clamp(0.7rem, 1vw + 0.74rem, 1.4rem);
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+.gold-coin-container {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 619px) {
+    nav {
+        padding-inline: 2em;
+    }
+}

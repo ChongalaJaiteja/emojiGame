@@ -1,0 +1,31 @@
+.emoji-container {
+    background-color: #9796f0;
+    border-radius: 30px;
+    border: 5px solid #ffffff30;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 100%;
+    padding: 1.1em 1em;
+}
+
+.emoji-container > img {
+    width: min(66%, 5rem);
+}
+
+@media (min-width: 320px) {
+    .emoji-container {
+        flex: 1 1 calc(50% - 1em);
+    }
+}
+
+@media (min-width: 490px) {
+    .emoji-container {
+        flex: 1 1 calc(33% - 1em);
+    }
+}
+
+@media (min-width: 695px) {
+    .emoji-container {
+        flex: 1 1 calc(25% - 1em);
+    }
+}

@@ -1,0 +1,26 @@
+.app-container {
+    min-height: 100vh;
+    font-family: 'Roboto';
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+    display: flex;
+    flex-direction: column;
+  }
+  .emoji-game-bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    margin-block: auto;
+  }
+  .emoji-game-container {
+    list-style-type: none;
+    width: min(88%, 43rem);
+    display: flex;
+    padding: 0;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+  

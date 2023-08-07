@@ -1,0 +1,7 @@
+.user-coins-details-container {
+    min-height: 100vh;
+    border: 1px solid red;
+}
+.gold-coin-img {
+    width: min(100%, 30rem);
+}

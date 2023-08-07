@@ -1,0 +1,63 @@
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: min(88%, 43rem);
+    font-weight: 600;
+    border: 5px solid #ffffff30;
+    border-radius: 20px;
+    padding: 1em;
+    margin-block: 0.7em;
+}
+.result-img {
+    width: min(75%, 14rem);
+}
+.result-score-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.result-heading {
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
+}
+
+.score {
+    font-size: clamp(1rem, 1vw + 1.3rem, 2.3rem);
+    color: #6a59ff;
+}
+p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+.replay-btn {
+    background: #ffce27;
+    border-radius: 12px;
+    color: #3d3d3d;
+    padding: 0.9em 1.1em;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    font-size: clamp(0.3rem, 1vw + 0.5rem, 0.9rem);
+}
+.use-coins-btn {
+    background: #6ffc95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 530px) {
+    .result-container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1.4em;
+    }
+    .result-img {
+        width: min(75%, 17rem);
+    }
+}
