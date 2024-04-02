@@ -82,7 +82,10 @@ const emojisList = [
 const App = () => (
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<EmojiGame emojisList={emojisList} />} />
+            <Route
+                path="/emojiGame"
+                element={<EmojiGame emojisList={emojisList} />}
+            />
             {/* <Route path="/coins" element={<Coins />} /> */}
             <Route path="*" element={<NotFound />} />
         </Routes>
