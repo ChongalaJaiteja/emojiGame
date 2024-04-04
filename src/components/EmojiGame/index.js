@@ -80,15 +80,89 @@ class EmojiGame extends Component {
                             overAllScore={emojisList.length}
                         />
                     ) : (
-                        <ul className="emoji-game-container">
-                            {emojisList.map((eachEmoji) => (
-                                <EmojiCard
-                                    key={eachEmoji.id}
-                                    emojiDetails={eachEmoji}
-                                    onEmojiClick={this.onEmojiClick}
-                                />
-                            ))}
-                        </ul>
+                        <>
+                            <ul className="emoji-game-container">
+                                {emojisList.map((eachEmoji) => (
+                                    <EmojiCard
+                                        key={eachEmoji.id}
+                                        emojiDetails={eachEmoji}
+                                        onEmojiClick={this.onEmojiClick}
+                                    />
+                                ))}
+                            </ul>
+                            <div className="instructions-bg-container">
+                                <h1 className="instructions-heading">
+                                    Instructions to Play:
+                                </h1>
+                                <ol>
+                                    <li>
+                                        <h2>Objective:</h2>
+                                        <p>
+                                            Click on emojis to earn points and
+                                            collect golden coins.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <h2>Gameplay:</h2>
+                                        <ul>
+                                            <li>
+                                                Emojis will be displayed on your
+                                                screen.
+                                            </li>
+                                            <li>
+                                                Click on an emoji that you
+                                                haven't clicked before to earn 1
+                                                point.
+                                            </li>
+                                            <li>
+                                                Each click adds to your score.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h2>Golden Coin Power:</h2>
+                                        <ul>
+                                            <li>
+                                                Earn a gold coin when your score
+                                                matches the number of emojis
+                                                displayed.
+                                            </li>
+                                            <li>
+                                                Collect golden coins to redeem a
+                                                second chance.
+                                            </li>
+                                            <li>
+                                                Use coins to continue from where
+                                                you left off.
+                                            </li>
+                                            <li>
+                                                Note: The number of coins needed
+                                                to redeem for the next chance
+                                                doubles each time you use a
+                                                coin.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h2>💡Tips:</h2>
+                                        <ul>
+                                            <li>
+                                                Strategize your clicks to
+                                                maximize points and collect
+                                                coins efficiently.
+                                            </li>
+                                            <li>
+                                                Keep an eye on your score and
+                                                the number of emojis displayed.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </>
                     )}
                 </div>
             </div>

@@ -23,6 +23,7 @@ const emojisList = [
         emojiUrl:
             "https://assets.ccbp.in/frontend/react-js/face-with-hugs-img.png",
     },
+    
     {
         id: 3,
         emojiName: "Face with laughing",
